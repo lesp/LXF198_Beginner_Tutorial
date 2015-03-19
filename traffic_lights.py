@@ -43,34 +43,3 @@ try:
             sleep(2)
 except KeyboardInterrupt:
     GPIO.cleanup()
-"""
-try:
-    while True:
-        if GPIO.input(button) == False:
-            for i in range(10):
-                print("W A L K")
-                GPIO.output(buzzer,1)
-                GPIO.output(green,1)
-                sleep(0.2)
-                GPIO.output(buzzer,0)
-                GPIO.output(green,0)
-                sleep(0.2)  
-        elif GPIO.input(button) == True:
-            print("Green")
-            GPIO.output(green, 1)
-            sleep(5)
-            GPIO.output(green, 0)
-            print("Amber")
-            GPIO.output(amber, 1)
-            sleep(2)
-            GPIO.output(amber, 0)
-            print("Red")
-            GPIO.output(red, 1)
-            sleep(5)
-            GPIO.output(amber, 1)
-            sleep(2)
-            GPIO.output(amber, 0)
-            GPIO.output(red, 0)
-except KeyboardInterrupt:
-    GPIO.cleanup()
-"""
