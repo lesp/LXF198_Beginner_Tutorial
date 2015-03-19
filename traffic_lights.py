@@ -39,7 +39,10 @@ try:
                 GPIO.output(green,0)
                 GPIO.output(buzzer,0)
                 sleep(0.2)
-            GPIO.output(red,0)
+            GPIO.output(red,1)
+            GPIO.output(amber,1)
             sleep(2)
+            GPIO.output(amber,0)
+            GPIO.output(red,0)
 except KeyboardInterrupt:
     GPIO.cleanup()
