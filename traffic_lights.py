@@ -1,6 +1,6 @@
 import RPi.GPIO as GPIO
 from time import sleep
-from threading import Thread
+
 
 #Setup the GPIO to show no errors, even if there are.
 GPIO.setwarnings(False)
